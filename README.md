@@ -1,26 +1,26 @@
 # 🎯 Guess The Target Number
 
-A simple and interactive Python console game where the computer randomly selects a number between **1 and 100**, and the player must guess the correct number using logical thinking and hints. The game provides feedback after every guess, helping the player reach the correct answer.
+A simple Python console game where the computer randomly generates a target number between **1 and 100**, and the player tries to guess it correctly. After each incorrect guess, the game provides a helpful hint indicating whether the guessed number is too high or too low. The game continues until the player guesses the correct number or chooses to quit.
 
 ---
 
-## 📌 Project Overview
+## 📖 Overview
 
-This project is built using Python and demonstrates the fundamentals of programming such as loops, conditional statements, user input handling, and random number generation.
+**Guess The Target Number** is a beginner-friendly Python project designed to practice fundamental programming concepts. It demonstrates how to generate random numbers, accept user input, implement loops, and make decisions using conditional statements.
 
-It is an excellent beginner-friendly project for learning problem-solving and basic Python programming.
+This project is ideal for Python beginners who want hands-on experience building an interactive console application.
 
 ---
 
 ## ✨ Features
 
-- 🎲 Generates a random number between **1 and 100**
+- 🎲 Randomly generates a number between **1 and 100**
 - 🎮 Interactive command-line gameplay
-- 📉 Displays **Too Low** hint
-- 📈 Displays **Too High** hint
-- ✅ Displays success message when the correct number is guessed
-- ❌ Quit the game anytime by entering **Q**
-- 🐍 Lightweight and beginner-friendly
+- 📉 Displays a hint when the guess is too low
+- 📈 Displays a hint when the guess is too high
+- ✅ Displays a success message when the correct number is guessed
+- ❌ Allows the user to quit the game anytime by entering **Q**
+- 🐍 Simple and beginner-friendly implementation
 
 ---
 
@@ -41,21 +41,33 @@ guess-the-target-number/
 
 ---
 
-## ▶️ Getting Started
+## ⚙️ How It Works
 
-### 1. Clone the Repository
+1. The program generates a random number between **1 and 100**.
+2. The player enters a guess.
+3. If the guess is:
+   - Smaller than the target → A "Too Small" hint is displayed.
+   - Greater than the target → A "Too Big" hint is displayed.
+   - Equal to the target → The player wins.
+4. The player can quit the game at any time by entering **Q**.
+
+---
+
+## 🚀 Getting Started
+
+### Clone the Repository
 
 ```bash
 git clone https://github.com/FauziaDev/guess-the-target-number.git
 ```
 
-### 2. Navigate to the Project Folder
+### Navigate to the Project Folder
 
 ```bash
 cd guess-the-target-number
 ```
 
-### 3. Run the Program
+### Run the Program
 
 ```bash
 python guess_number.py
@@ -63,76 +75,85 @@ python guess_number.py
 
 ---
 
-## 🎮 Sample Gameplay
+## 💻 Sample Output
 
 ```text
 Guess the target or Quit(Q): 30
-Your number was too small. Take a bigger guess.
+your number was too small. Take a bigger guess..
 
-Guess the target or Quit(Q): 80
-Your number was too big. Take a smaller guess.
+Guess the target or Quit(Q): 75
+your number was too big. Take a smaller guess..
 
 Guess the target or Quit(Q): 63
-Success: Correct Guess!!
------ GAME OVER -----
+Success : Correct Guess!!
+
+-----GAME OVER-----
 ```
 
 ---
 
-## 📚 Python Concepts Practiced
+## 📚 Python Concepts Used
+
+This project demonstrates the following Python concepts:
 
 - Variables
-- User Input
-- Data Type Conversion
-- while Loop
-- if-elif-else Statements
-- Random Number Generation
-- Conditional Logic
+- User Input (`input()`)
+- Type Conversion (`int()`)
+- Infinite Loops (`while`)
+- Conditional Statements (`if`, `elif`, `else`)
+- Random Number Generation (`random.randint()`)
 - Program Flow Control
-
----
-
-## 🚀 Future Improvements
-
-- Add attempt counter
-- Add difficulty levels (Easy, Medium, Hard)
-- High score tracking
-- Input validation
-- Play Again option
-- Timer mode
-- Limited attempts mode
-- Colorful terminal output
-- Graphical User Interface (Tkinter)
-- Web version using Flask
+- Importing Modules
 
 ---
 
 ## 🎯 Learning Outcomes
 
-By building this project, you will understand:
+After completing this project, you will understand how to:
 
-- How random numbers are generated in Python.
-- How loops keep a program running until a condition is met.
-- How conditional statements control program flow.
-- How to take and validate user input.
-- How to build interactive console applications.
+- Generate random numbers in Python
+- Build an interactive console application
+- Accept and process user input
+- Compare values using conditional statements
+- Control program execution with loops
+- Import and use Python modules
+
+---
+
+## 🔮 Future Improvements
+
+Possible enhancements for future versions:
+
+- Input validation for invalid values
+- Attempt counter
+- Difficulty levels (Easy, Medium, Hard)
+- Score system
+- Play Again option
+- High score tracking
+- Time limit mode
+- Colored terminal output
+- GUI version using Tkinter
+- Web version using Flask
 
 ---
 
 ## 🤝 Contributing
 
-Contributions, suggestions, and improvements are welcome.
+Contributions are welcome.
 
-1. Fork the repository.
-2. Create a new branch.
-3. Commit your changes.
-4. Open a Pull Request.
+If you'd like to improve this project:
+
+1. Fork the repository
+2. Create a new branch
+3. Commit your changes
+4. Push the branch
+5. Open a Pull Request
 
 ---
 
 ## 📄 License
 
-This project is available for educational and learning purposes.
+This project is created for educational and learning purposes.
 
 ---
 
@@ -144,4 +165,4 @@ GitHub: **https://github.com/FauziaDev**
 
 ---
 
-⭐ If you found this project helpful, consider giving it a **Star** on GitHub.
+### ⭐ If you found this project useful, don't forget to give it a Star!
